@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "357e48b0-23d1-478d-9c49-95107f1ded8d",
+		"name": "Sampath Bank Practical Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25319657"
+	},
+	"item": [
+		{
+			"name": "Create new employee",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empID\":\"00\",\r\n    \"firstName\":\"Jane\",\r\n    \"lastName\":\"Perera\",\r\n    \"email\":\"jane@gmail.com\",\r\n    \"salary\":\"60000\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Feb 2025 04:36:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"00\",\n    \"message\": \"Success\",\n    \"content\": {\n        \"empID\": 0,\n        \"firstName\": \"Jane\",\n        \"lastName\": \"Perera\",\n        \"email\": \"jane@gmail.com\",\n        \"salary\": 60000\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update an employee",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"empID\":\"1\",\r\n    \"firstName\":\"Updated Jane\",\r\n    \"lastName\":\"Jay\",\r\n    \"email\":\"saman@gmail.com\",\r\n    \"salary\":\"60000\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/employees/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Feb 2025 05:07:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"00\",\n    \"message\": \"Success\",\n    \"content\": {\n        \"empID\": 1,\n        \"firstName\": \"Updated Jane\",\n        \"lastName\": \"Jay\",\n        \"email\": \"saman@gmail.com\",\n        \"salary\": 60000\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get all Employees",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Feb 2025 05:22:46 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"00\",\n    \"message\": \"Success\",\n    \"content\": [\n        {\n            \"empID\": 2,\n            \"firstName\": \"Shane\",\n            \"lastName\": \"Perera\",\n            \"email\": \"shane@gmail.com\",\n            \"salary\": 60000\n        },\n        {\n            \"empID\": 3,\n            \"firstName\": \"Austin\",\n            \"lastName\": \"Perera\",\n            \"email\": \"Austin@gmail.com\",\n            \"salary\": 60000\n        },\n        {\n            \"empID\": 4,\n            \"firstName\": \"saman\",\n            \"lastName\": \"Perera\",\n            \"email\": \"saman@gmail.com\",\n            \"salary\": 60000\n        },\n        {\n            \"empID\": 1,\n            \"firstName\": \"Updated Jane\",\n            \"lastName\": \"Jay\",\n            \"email\": \"saman@gmail.com\",\n            \"salary\": 60000\n        },\n        {\n            \"empID\": 5,\n            \"firstName\": \"Kamal\",\n            \"lastName\": \"Perera\",\n            \"email\": \"Kamal@gmail.com\",\n            \"salary\": 60000\n        },\n        {\n            \"empID\": 6,\n            \"firstName\": \"Sunimal\",\n            \"lastName\": \"Perera\",\n            \"email\": \"Sunimal@gmail.com\",\n            \"salary\": 60000\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Employee by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/employees/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"2"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Feb 2025 05:43:31 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"00\",\n    \"message\": \"Success\",\n    \"content\": {\n        \"empID\": 2,\n        \"firstName\": \"Shane\",\n        \"lastName\": \"Perera\",\n        \"email\": \"shane@gmail.com\",\n        \"salary\": 60000\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete an employee",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/employees/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"employees",
+								"5"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Feb 2025 05:38:44 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": \"00\",\n    \"message\": \"Success\",\n    \"content\": null\n}"
+				}
+			]
+		}
+	]
+}
